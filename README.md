@@ -41,9 +41,9 @@ creating a separate Majors table.
 
 ---
 
-## MySQL Implementation
+## MySQL Implementation Shown Step by Step 
 
-### Create Database
+### 1.Create Database
 ```sql
 CREATE DATABASE university_db;
 USE university_db;
