@@ -47,3 +47,12 @@ creating a separate Majors table.
 ```sql
 CREATE DATABASE university_db;
 USE university_db;
+```
+
+### 2.Create Major Table
+```sql
+CREATE TABLE Majors (
+    Major VARCHAR(50) PRIMARY KEY,
+    Advisor VARCHAR(100) NOT NULL
+);
+```
