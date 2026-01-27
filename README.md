@@ -49,10 +49,21 @@ CREATE DATABASE university_db;
 USE university_db;
 ```
 
-### 2.Create Major Table
+### 2.Create Majors Table
 ```sql
 CREATE TABLE Majors (
     Major VARCHAR(50) PRIMARY KEY,
-    Advisor VARCHAR(100) NOT NULL
+    Advisor VARCHAR(50) NOT NULL
 );
 ```
+### 3.Create Student Table
+```sql
+CREATE TABLE Students (
+    StudentID VARCHAR(10) PRIMARY KEY,
+    Name VARCHAR(100) NOT NULL,
+    Email VARCHAR(100) UNIQUE NOT NULL,
+    Major VARCHAR(50),
+    FOREIGN KEY (Major) REFERENCES Majors(Major)
+);
+```
+
