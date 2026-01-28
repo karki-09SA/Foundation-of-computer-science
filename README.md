@@ -129,5 +129,16 @@ JOIN Majors m ON s.Major = m.Major
 JOIN Enrollments e ON s.StudentID = e.StudentID
 JOIN Courses c ON e.CourseID = c.CourseID;
 ```
+*Expected Output*
+```
++-----------+-------+---------------+---------+-----------+----------+----------------+---------+-------+-----------+------+
+| StudentID | Name  | Email         | Major   | Advisor   | CourseID | CourseTitle    | Credits | Grade | Building  | Room |
++-----------+-------+---------------+---------+-----------+----------+----------------+---------+-------+-----------+------+
+| S101      | Alice | alice@uni.edu | CS      | Dr. Smith | CS301    | Algorithms     |       4 | A     | Science   | 205  |
+| S101      | Alice | alice@uni.edu | CS      | Dr. Smith | MATH201  | Linear Algebra |       3 | B     | Math Wing | 101  |
+| S102      | Bob   | bob@uni.edu   | CS      | Dr. Smith | CS301    | Algorithms     |       4 | C     | Science   | 205  |
+| S103      | Carol | carol@uni.edu | Physics | Dr. Lee   | PHYS101  | Mechanics      |       4 | A     | Science   | 301  |
++-----------+-------+---------------+---------+-----------+----------+----------------+---------+-------+-----------+------+
+```
 ## Author 
 Sachit Karki
