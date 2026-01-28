@@ -129,7 +129,7 @@ JOIN Majors m ON s.Major = m.Major
 JOIN Enrollments e ON s.StudentID = e.StudentID
 JOIN Courses c ON e.CourseID = c.CourseID;
 ```
-*Expected Output *
+**Expected Output:**
 ```
 +-----------+-------+---------------+---------+-----------+----------+----------------+---------+-------+-----------+------+
 | StudentID | Name  | Email         | Major   | Advisor   | CourseID | CourseTitle    | Credits | Grade | Building  | Room |
