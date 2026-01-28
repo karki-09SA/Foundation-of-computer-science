@@ -1,4 +1,4 @@
-###Introduction###
+###Introduction
 
 This assignment is about database normalization using a university registration system. The main goal is to convert unnormalized data into 1NF, 2NF, and 3NF to reduce redundancy and avoid data inconsistency. The normalized tables are implemented using MySQL, and SQL queries are used to verify that the data is stored correctly.
 
